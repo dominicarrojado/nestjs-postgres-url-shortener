@@ -1,6 +1,6 @@
 # NestJS PostgreSQL URL Shortener
 
-[![CI/CD](https://github.com/dominicarrojado/nestjs-postgres-url-shortener/actions/workflows/ci.yml/badge.svg)](https://github.com/dominicarrojado/nestjs-postgres-url-shortener/actions/workflows/ci.yml)
+[![CI/CD](https://github.com/dominicarrojado/nestjs-postgres-url-shortener/actions/workflows/ci.yml/badge.svg)](https://github.com/dominicarrojado/nestjs-postgres-url-shortener/actions/workflows/ci.yml) [![codecov](https://codecov.io/gh/dominicarrojado/nestjs-postgres-url-shortener/branch/main/graph/badge.svg?token=FQF6RYCF9P)](https://codecov.io/gh/dominicarrojado/nestjs-postgres-url-shortener)
 
 A URL shortener server-side app built with [Nest.js](https://nestjs.com/) and [PostgreSQL](https://www.postgresql.org/).
 
