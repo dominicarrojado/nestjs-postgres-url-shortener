@@ -1,6 +1,6 @@
-# Nest (NestJS) Framework Boilerplate
+# NestJS PostgreSQL URL Shortener
 
-[![CI/CD](https://github.com/dominicarrojado/nestjs-postgres-url-shortener/actions/workflows/ci.yml/badge.svg)](https://github.com/dominicarrojado/nestjs-postgres-url-shortener/actions/workflows/ci.yml) [![codecov](https://codecov.io/gh/dominicarrojado/dominicarrojado.github.io/branch/develop/graph/badge.svg?token=6W0VKYWOKI)](https://codecov.io/gh/dominicarrojado/dominicarrojado.github.io)
+[![CI/CD](https://github.com/dominicarrojado/nestjs-postgres-url-shortener/actions/workflows/ci.yml/badge.svg)](https://github.com/dominicarrojado/nestjs-postgres-url-shortener/actions/workflows/ci.yml)
 
 A URL shortener server-side app built with [Nest.js](https://nestjs.com/) and [PostgreSQL](https://www.postgresql.org/).
 
@@ -66,4 +66,4 @@ yarn docker-compose:prod
 
 ## Learn
 
-Learn how to build this setup or boilerplate [here](https://dominicarrojado.com/posts/local-development-setup-for-nestjs-projects-with-postgresql/).
+Learn how to build this url shortener app [here](https://dominicarrojado.com/posts/building-a-link-shortener-api-with-nestjs-and-postgresql-with-tests-part-1/).
