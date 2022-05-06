@@ -1,10 +1,9 @@
 import { Module } from '@nestjs/common';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
-import { UsersModule } from './users/users.module';
 import { configValidationSchema } from './config.schema';
+import { LinksModule } from './links/links.module';
+import { WildcardModule } from './wildcard/wildcard.module';
 
 @Module({
   imports: [
@@ -28,9 +27,10 @@ import { configValidationSchema } from './config.schema';
         };
       },
     }),
-    UsersModule,
+    LinksModule,
+    WildcardModule,
   ],
-  controllers: [AppController],
-  providers: [AppService],
+  controllers: [],
+  providers: [],
 })
 export class AppModule {}

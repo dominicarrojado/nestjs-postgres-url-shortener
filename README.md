@@ -1,8 +1,8 @@
 # Nest (NestJS) Framework Boilerplate
 
-[![CI/CD](https://github.com/dominicarrojado/nestjs-postgres-boilerplate/actions/workflows/ci.yml/badge.svg)](https://github.com/dominicarrojado/nestjs-postgres-boilerplate/actions/workflows/ci.yml)
+[![CI/CD](https://github.com/dominicarrojado/nestjs-postgres-url-shortener/actions/workflows/ci.yml/badge.svg)](https://github.com/dominicarrojado/nestjs-postgres-url-shortener/actions/workflows/ci.yml) [![codecov](https://codecov.io/gh/dominicarrojado/dominicarrojado.github.io/branch/develop/graph/badge.svg?token=6W0VKYWOKI)](https://codecov.io/gh/dominicarrojado/dominicarrojado.github.io)
 
-A local development setup or boilerplate for [Nest.js framework](https://nestjs.com/) with [PostgreSQL](https://www.postgresql.org/) and [pgAdmin4](https://www.pgadmin.org/) using [Docker Compose](https://docs.docker.com/compose/).
+A URL shortener server-side app built with [Nest.js](https://nestjs.com/) and [PostgreSQL](https://www.postgresql.org/).
 
 ## Quick Start
 
@@ -12,13 +12,13 @@ A local development setup or boilerplate for [Nest.js framework](https://nestjs.
 4. Clone the app:
 
 ```bash
-git clone git@github.com:dominicarrojado/nestjs-postgres-boilerplate.git
+git clone git@github.com:dominicarrojado/nestjs-postgres-url-shortener.git
 ```
 
 5. Install npm packages - _for IDE type checking_.
 
 ```bash
-cd nestjs-postgres-boilerplate
+cd nestjs-postgres-url-shortener
 yarn install --frozen-lockfile
 ```
 
@@ -28,7 +28,7 @@ yarn install --frozen-lockfile
 yarn docker-compose:dev
 ```
 
-7. Access the app at http://localhost:5000.
+7. Access the app at http://localhost:3000.
 8. Make file changes and it will automatically rebuild the app.
 
 ## Running All Tests
