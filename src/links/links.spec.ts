@@ -138,6 +138,39 @@ describe('Links', () => {
 
       expect(link).toEqual(resBody);
     });
+
+    it('should handle already exists', async () => {
+      const existingLink = await createLinkItem();
+      const linkBody = createLinkBody();
+
+      const res = await request(app.getHttpServer()).post('/links').send({
+        name: existingLink.name,
+        url: linkBody.url,
+      });
+      const resBody = res.body;
+
+      expect(res.status).toBe(409);
+      expect(resBody.error).toBe('Conflict');
+      expect(resBody.message).toBe('Short name already exists');
+    });
+
+    it('should handle unexpected error', async () => {
+      const linksRepositorySaveMock = jest
+        .spyOn(linksRepository, 'save')
+        .mockRejectedValue({});
+
+      const linkBody = createLinkBody();
+
+      const res = await request(app.getHttpServer())
+        .post('/links')
+        .send(linkBody);
+      const resBody = res.body;
+
+      expect(res.status).toBe(500);
+      expect(resBody.message).toBe('Internal Server Error');
+
+      linksRepositorySaveMock.mockRestore();
+    });
   });
 
   describe('/links/:id (DELETE)', () => {
